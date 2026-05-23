@@ -1,0 +1,73 @@
+
+ body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa; /* Fondo claro */
+        }
+        .container.main-content {
+            margin: 0; /* Elimina márgenes predeterminados */
+            padding: 20px; /* Ajusta el padding a tu preferencia */
+            width: 100%; /* Hace que el contenedor ocupe todo el ancho */
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 2.5rem;
+            color: #333; /* Color oscuro */
+            margin-bottom: 40px;
+            margin-left: 0; /* Ajusta el margen izquierdo a 0 */
+            font-weight: 700;
+        }
+
+        .btn-group {
+            margin-bottom: 20px; /* Espacio entre botones y productos */
+        }
+
+        .product-container {
+            display: flex; /* Cambia a flexbox para una mejor alineación */
+            justify-content: space-between; /* Espacio entre elementos */
+            flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */
+            margin: 40px 0;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px; /* Espacio interno */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            width: calc(33.33% - 10px); /* Ancho para que se alineen tres por fila, ajusta según el gap */
+            margin: 0 5px 20px 0; /* Ajuste para el margen inferior y derecho */
+        }
+
+        .product-card img {
+            max-width: 80%; /* Ajusta el tamaño de la imagen */
+            height: auto; /* Mantiene la proporción */
+            border-radius: 5px; /* Bordes redondeados para la imagen */
+            margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+
+        .product-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px); /* Efecto hover más sutil */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .no-products {
+            font-size: 1.2rem;
+            color: #666;
+            text-align: center;
+            margin-top: 40px;
+        }

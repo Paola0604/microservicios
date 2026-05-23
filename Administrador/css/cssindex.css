@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100vh;
+    background-color: #212529;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    z-index: 1;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #343a40;
+}
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+/* Barra superior (navbar) */
+.navbar {
+    background-color: #212529;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 220px; /* Pegada a la barra lateral */
+    width: calc(100% - 220px); /* Resta el ancho de la sidebar */
+    z-index: 1000;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-nav a {
+    color: white;
+    margin-left: 20px;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #d4d4d4;
+}
+
+/* Contenido principal */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    margin-top: 60px; /* Para evitar que el contenido se superponga con la barra superior */
+}
+
+/* Estilos para las tarjetas (cards) */
+.card-custom {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.card-custom .card-body {
+    padding: 20px;
+}
+
+.card-custom .card-body i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
